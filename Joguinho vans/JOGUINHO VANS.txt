@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+int main()
+{
+setlocale(LC_ALL,"");
+    // definindo variaveis
+        char j1[10], j2[10];
+        int n1, n2;
+
+    //nome do jogador
+    printf (" Escolha o nome do player 1: ");
+    gets(j1);
+
+    printf  (" Escolha o nome do player 2 :");
+    gets(j2);
+
+    // O JOGO
+    printf (" Escolha um numero %s: ", j1);
+    scanf ("%d", &n1);
+
+    printf (" Escolha um numero %s: ", j2);
+    scanf ("%d", &n2);
+
+    if (n1 > n2){
+        printf (" O vencedor é o jogador %s:", j1);
+
+    }else
+        printf ("O vencedor é o jogador %s:", j2);
+
+    return 0;
+}

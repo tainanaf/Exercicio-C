@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float litros;
+    float km;
+    float valor;
+    float result;
+    printf (" Quantos km  seu veiculo faz por litro :");
+    scanf ("%d", &litros);
+    printf (" Quantos km voce quer percorrer :");
+    scanf ("%d", &km);
+    printf (" qual o valor do combustivel ");
+    scanf ("%f", &valor);
+    result =  km / litros * valor;
+    printf (" voce vai gastar $ : %.2f", result);
+    if (result > 13){
+        printf (" \nsua moto ta bebendo mais q o allan");
+    }else {
+        printf ("\n sua moto bebe q nem o eder");
+    }
+
+
+
+return 0;
+}
